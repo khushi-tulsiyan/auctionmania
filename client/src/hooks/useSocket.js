@@ -65,7 +65,7 @@ export const useSocket = (userId, onEvents = {}) => {
       clearInterval(heartbeatInterval);
       socket.disconnect();
     };
-  }, [userId]);
+  }, [userId, onEvents]);
 
   useEffect(() => {
     if (!socketRef.current) return;

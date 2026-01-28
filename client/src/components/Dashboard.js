@@ -12,7 +12,6 @@ const Dashboard = () => {
     userBids,
     updateUserBid,
     syncServerTime,
-    getClientServerTime,
   } = useContext(AuctionContext);
 
   const [loading, setLoading] = useState(true);
